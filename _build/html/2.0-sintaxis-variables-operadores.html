@@ -356,6 +356,14 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#slicing">Slicing</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#operadores-aritmeticos-y-logicos">Operadores aritméticos y lógicos</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aritmeticos">Aritméticos</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#comparaciones">Comparaciones</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#logicos">Lógicos</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#funciones">Funciones</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#loops">Loops</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#condicionales">Condicionales</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplos">Ejemplos</a></li>
 </ul>
             </nav>
         </div>
@@ -698,7 +706,7 @@ texto 1 	 texto 2 	 texto3 3
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[1, 2, 3, 1, 2, &#39;a&#39;, &#39;b&#39;, &#39;a&#39;, &#39;b&#39;]
 (1, 2, 3, 4, 5, &#39;a&#39;, &#39;b&#39;, 1)
 {&#39;ECU&#39;: &#39;Ecuador&#39;, &#39;COL&#39;: &#39;Colombia&#39;, &#39;PER&#39;: &#39;Perú&#39;, &#39;BOL&#39;: &#39;Bolivia&#39;}
-{1, 2, 3, &#39;b&#39;, &#39;a&#39;}
+{1, 2, 3, &#39;a&#39;, &#39;b&#39;}
 </pre></div>
 </div>
 </div>
@@ -854,6 +862,175 @@ c
 <p>¿Cómo crearía una estructura de datos que contenga las notas de los 3 progresos de un grupo de alumnos?</p>
 </div>
 </section>
+<section id="operadores-aritmeticos-y-logicos">
+<h2>Operadores aritméticos y lógicos<a class="headerlink" href="#operadores-aritmeticos-y-logicos" title="Permalink to this heading">#</a></h2>
+<p>Un amplio listado lo podemos encontrar en:</p>
+<p><a class="reference external" href="https://www.w3schools.com/python/python_operators.asp">https://www.w3schools.com/python/python_operators.asp</a></p>
+</section>
+<section id="aritmeticos">
+<h2>Aritméticos<a class="headerlink" href="#aritmeticos" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>+	Addition</p></li>
+<li><p>-	Subtraction</p></li>
+<li><p>*	Multiplication</p></li>
+<li><p>/	Division</p></li>
+<li><p>%	Modulus</p></li>
+<li><p>**	Exponentiation</p></li>
+<li><p>//	Floor division</p></li>
+</ul>
+</section>
+<section id="comparaciones">
+<h2>Comparaciones<a class="headerlink" href="#comparaciones" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>/==	Equal	x == y</p></li>
+<li><p>/!=	Not equal	x != y</p></li>
+<li><p>/&gt;	Greater than	x &gt; y</p></li>
+<li><p>/&lt;	Less than	x &lt; y</p></li>
+<li><p>/&gt;=	Greater than or equal to	x &gt;= y</p></li>
+<li><p>/&lt;=	Less than or equal to	x &lt;= y</p></li>
+</ul>
+</section>
+<section id="logicos">
+<h2>Lógicos<a class="headerlink" href="#logicos" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>AND</p></li>
+<li><p>OR</p></li>
+<li><p>NOT</p></li>
+</ul>
+</section>
+<section id="funciones">
+<h2>Funciones<a class="headerlink" href="#funciones" title="Permalink to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">suma</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">potencia</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="o">=</span><span class="mi">2</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">a</span> <span class="o">**</span> <span class="n">b</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="loops">
+<h2>Loops<a class="headerlink" href="#loops" title="Permalink to this heading">#</a></h2>
+<p>Existen dos tipos de loops: <strong>for</strong> and <strong>while</strong> loops:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">lista</span> <span class="o">=</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">lista</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">while</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+    <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+</pre></div>
+</div>
+</div>
+</div>
+<p>Puedo usar <strong>break</strong> para salir del ciclo</p>
+<div class="admonition-pregunta admonition">
+<p class="admonition-title">Pregunta</p>
+<p>¿Comó sumaría los N primeros números enteros?</p>
+</div>
+</section>
+<section id="condicionales">
+<h2>Condicionales<a class="headerlink" href="#condicionales" title="Permalink to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mi">5</span>
+
+<span class="k">if</span> <span class="n">x</span><span class="o">&gt;</span><span class="mi">5</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;x es mayor que 5&quot;</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">x</span><span class="o">==</span><span class="mi">5</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;x es igual a 5&quot;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;x es menor que 5&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>x es igual a 5
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="ejemplos">
+<h2>Ejemplos<a class="headerlink" href="#ejemplos" title="Permalink to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">Fibonacci</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+  
+    <span class="k">if</span> <span class="n">n</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Incorrect input&quot;</span><span class="p">)</span>
+  
+    <span class="k">elif</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">return</span> <span class="mi">0</span>
+  
+    <span class="k">elif</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">1</span> <span class="ow">or</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">2</span><span class="p">:</span>
+        <span class="k">return</span> <span class="mi">1</span>
+  
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">Fibonacci</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="n">Fibonacci</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">2</span><span class="p">)</span>
+  
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Fibonacci</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>55
+</pre></div>
+</div>
+</div>
+</div>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -936,6 +1113,14 @@ c
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#slicing">Slicing</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#operadores-aritmeticos-y-logicos">Operadores aritméticos y lógicos</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aritmeticos">Aritméticos</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#comparaciones">Comparaciones</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#logicos">Lógicos</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#funciones">Funciones</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#loops">Loops</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#condicionales">Condicionales</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejemplos">Ejemplos</a></li>
 </ul>
   </nav></div>
 
