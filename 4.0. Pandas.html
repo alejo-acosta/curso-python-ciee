@@ -64,7 +64,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = '4.0. Pandas';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Ejemplo: Curvas de indiferencia" href="9.0-curva-indiferencia.html" />
+    <link rel="next" title="5.0. Modelos y regresiones" href="5.0.Modelos-y-regresiones.html" />
     <link rel="prev" title="3. Librerías" href="3.0-librerias.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -162,6 +162,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="2.0-sintaxis-variables-operadores.html">2. Sintaxis, variables y operadores</a></li>
 <li class="toctree-l1"><a class="reference internal" href="3.0-librerias.html">3. Librerías</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">4. Pandas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="5.0.Modelos-y-regresiones.html">5.0. Modelos y regresiones</a></li>
 <li class="toctree-l1"><a class="reference internal" href="9.0-curva-indiferencia.html">Ejemplo: Curvas de indiferencia</a></li>
 <li class="toctree-l1"><a class="reference internal" href="9.1-simulacion-shock-mercado.html">Ejemplo: Simulación Shocks oferta y demanda</a></li>
 <li class="toctree-l1"><a class="reference internal" href="9.2-simulacion-gini.html">Ejemplo: Simulación Gini</a></li>
@@ -1422,17 +1423,17 @@ Name: listas, dtype: object
     </tr>
     <tr>
       <th>mean</th>
-      <td>6078.505157</td>
-      <td>9806.762821</td>
-      <td>2.885316</td>
-      <td>4.522436</td>
+      <td>6095.763019</td>
+      <td>9821.384615</td>
+      <td>2.894114</td>
+      <td>4.529808</td>
     </tr>
     <tr>
       <th>std</th>
-      <td>7738.458336</td>
-      <td>14160.042836</td>
-      <td>3.776989</td>
-      <td>6.319179</td>
+      <td>7798.942278</td>
+      <td>14178.463817</td>
+      <td>3.809398</td>
+      <td>6.330228</td>
     </tr>
     <tr>
       <th>min</th>
@@ -1464,9 +1465,9 @@ Name: listas, dtype: object
     </tr>
     <tr>
       <th>max</th>
-      <td>33487.000000</td>
+      <td>34515.000000</td>
       <td>126873.000000</td>
-      <td>16.100000</td>
+      <td>17.470000</td>
       <td>50.830000</td>
     </tr>
   </tbody>
@@ -1483,7 +1484,7 @@ Name: listas, dtype: object
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>C:\Users\Alejo\AppData\Local\Temp\ipykernel_7728\2817981066.py:1: DtypeWarning: Columns (6) have mixed types. Specify dtype option on import or set low_memory=False.
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>C:\Users\Alejo\AppData\Local\Temp\ipykernel_20296\2817981066.py:1: DtypeWarning: Columns (6) have mixed types. Specify dtype option on import or set low_memory=False.
   sales  = pd.read_csv(&#39;https://raw.githubusercontent.com/alejo-acosta/curso-python-ciee/main/data/sales.csv&#39;)
 </pre></div>
 </div>
@@ -2207,36 +2208,11 @@ dtype: object
 </ul>
 </li>
 </ol>
-<ol class="arabic simple" start="7">
-<li><p><strong>Limpieza y Preprocesamiento de Datos</strong></p>
-<ul class="simple">
-<li><p>Detección y eliminación de duplicados.</p></li>
-<li><p>Transformación de datos.</p></li>
-<li><p>Cambio de tipos de datos.</p></li>
-</ul>
-</li>
-</ol>
 <ol class="arabic simple" start="8">
 <li><p><strong>Visualización de Datos con Pandas</strong></p>
 <ul class="simple">
 <li><p>Gráficos básicos con Pandas.</p></li>
 <li><p>Uso de bibliotecas de visualización externas (ej. Matplotlib, Seaborn).</p></li>
-</ul>
-</li>
-</ol>
-<ol class="arabic simple" start="9">
-<li><p><strong>Casos Prácticos</strong></p>
-<ul class="simple">
-<li><p>Análisis exploratorio de un conjunto de datos real.</p></li>
-<li><p>Resolución de problemas comunes con Pandas.</p></li>
-</ul>
-</li>
-</ol>
-<ol class="arabic simple" start="10">
-<li><p><strong>Trabajo con Datos en el Mundo Real</strong></p>
-<ul class="simple">
-<li><p>Integración de Pandas con otras bibliotecas (ej. Scikit-learn).</p></li>
-<li><p>Trabajo con conjuntos de datos más grandes y eficiencia.</p></li>
 </ul>
 </li>
 </ol>
@@ -2283,11 +2259,11 @@ dtype: object
       </div>
     </a>
     <a class="right-next"
-       href="9.0-curva-indiferencia.html"
+       href="5.0.Modelos-y-regresiones.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Ejemplo: Curvas de indiferencia</p>
+        <p class="prev-next-title">5.0. Modelos y regresiones</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
