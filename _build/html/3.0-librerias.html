@@ -162,6 +162,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="2.0-sintaxis-variables-operadores.html">2. Sintaxis, variables y operadores</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">3. Librerías</a></li>
 <li class="toctree-l1"><a class="reference internal" href="4.0.%20Pandas.html">4. Pandas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="5.0.Modelos-y-regresiones.html">5.0. Modelos y regresiones</a></li>
 <li class="toctree-l1"><a class="reference internal" href="9.0-curva-indiferencia.html">Ejemplo: Curvas de indiferencia</a></li>
 <li class="toctree-l1"><a class="reference internal" href="9.1-simulacion-shock-mercado.html">Ejemplo: Simulación Shocks oferta y demanda</a></li>
 <li class="toctree-l1"><a class="reference internal" href="9.2-simulacion-gini.html">Ejemplo: Simulación Gini</a></li>
@@ -558,16 +559,16 @@ Requirement already satisfied: six&gt;=1.5 in c:\users\alejo\appdata\local\progr
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([[41, 74, 50, 21, 52, 86, 64, 57,  3, 69],
-       [52, 42,  5, 90, 24, 84, 57, 82, 75, 84],
-       [34, 49, 98,  6, 12, 29, 60, 75, 83, 12],
-       [69, 56, 18, 24, 98, 17, 14, 75, 23, 19],
-       [58, 69, 29, 75, 88, 17, 39,  4, 23, 91],
-       [32, 12, 40, 50, 36, 78, 48, 82, 70, 86],
-       [89, 23, 66, 96, 10, 63, 58, 60, 34,  5],
-       [39, 42,  1, 45, 42, 47, 28,  3, 64, 54],
-       [33,  1, 70, 34, 95, 87, 88, 32, 72, 65],
-       [92, 56, 79, 28, 76, 65, 93, 18, 96, 20]])
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([[22, 38,  5, 87, 64, 30, 98, 87, 44, 95],
+       [ 9, 40,  5, 62, 16, 57, 53, 15, 12, 95],
+       [96, 49, 38, 26, 98, 20, 45, 38, 34, 14],
+       [99, 46, 99, 89, 12, 76, 14, 97, 42, 83],
+       [32, 28, 44,  2, 84, 93, 52, 49, 93, 32],
+       [78, 81, 46, 40, 43, 22, 88,  2, 40, 38],
+       [10,  8, 66,  2, 26, 57, 78, 82, 48, 40],
+       [41, 59, 65, 62,  4, 28, 25, 59, 51, 52],
+       [ 6, 35, 89,  5, 33, 59, 95, 36, 40,  3],
+       [48, 15, 48, 62, 31, 95, 19, 87, 12, 56]])
 </pre></div>
 </div>
 </div>
@@ -625,133 +626,133 @@ Requirement already satisfied: six&gt;=1.5 in c:\users\alejo\appdata\local\progr
   <tbody>
     <tr>
       <th>0</th>
+      <td>82</td>
       <td>65</td>
-      <td>8</td>
-      <td>80</td>
-      <td>75</td>
-      <td>29</td>
-      <td>26</td>
-      <td>46</td>
-      <td>65</td>
-      <td>4</td>
-      <td>39</td>
+      <td>93</td>
+      <td>93</td>
+      <td>27</td>
+      <td>35</td>
+      <td>32</td>
+      <td>30</td>
+      <td>42</td>
+      <td>13</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>26</td>
-      <td>9</td>
-      <td>6</td>
-      <td>46</td>
-      <td>63</td>
-      <td>9</td>
-      <td>60</td>
-      <td>42</td>
-      <td>66</td>
-      <td>16</td>
+      <td>41</td>
+      <td>31</td>
+      <td>57</td>
+      <td>10</td>
+      <td>27</td>
+      <td>86</td>
+      <td>1</td>
+      <td>37</td>
+      <td>57</td>
+      <td>81</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>72</td>
-      <td>35</td>
-      <td>27</td>
-      <td>46</td>
-      <td>49</td>
-      <td>46</td>
-      <td>86</td>
-      <td>73</td>
-      <td>20</td>
-      <td>83</td>
+      <td>18</td>
+      <td>30</td>
+      <td>52</td>
+      <td>53</td>
+      <td>89</td>
+      <td>87</td>
+      <td>52</td>
+      <td>12</td>
+      <td>42</td>
+      <td>97</td>
     </tr>
     <tr>
       <th>3</th>
+      <td>3</td>
+      <td>52</td>
+      <td>41</td>
+      <td>18</td>
+      <td>60</td>
+      <td>37</td>
       <td>64</td>
-      <td>99</td>
-      <td>78</td>
-      <td>12</td>
-      <td>24</td>
-      <td>12</td>
-      <td>4</td>
-      <td>9</td>
-      <td>92</td>
-      <td>28</td>
+      <td>64</td>
+      <td>29</td>
+      <td>79</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>31</td>
+      <td>89</td>
+      <td>94</td>
       <td>57</td>
-      <td>93</td>
-      <td>30</td>
-      <td>7</td>
-      <td>70</td>
+      <td>28</td>
+      <td>40</td>
       <td>17</td>
-      <td>35</td>
-      <td>35</td>
-      <td>49</td>
+      <td>73</td>
+      <td>57</td>
+      <td>82</td>
+      <td>75</td>
     </tr>
     <tr>
       <th>5</th>
-      <td>43</td>
-      <td>13</td>
-      <td>74</td>
-      <td>85</td>
-      <td>84</td>
-      <td>50</td>
-      <td>98</td>
-      <td>82</td>
-      <td>4</td>
-      <td>42</td>
+      <td>79</td>
+      <td>83</td>
+      <td>44</td>
+      <td>97</td>
+      <td>9</td>
+      <td>71</td>
+      <td>77</td>
+      <td>35</td>
+      <td>40</td>
+      <td>90</td>
     </tr>
     <tr>
       <th>6</th>
-      <td>19</td>
-      <td>42</td>
       <td>3</td>
-      <td>13</td>
-      <td>68</td>
-      <td>53</td>
-      <td>21</td>
-      <td>54</td>
-      <td>78</td>
-      <td>9</td>
+      <td>62</td>
+      <td>63</td>
+      <td>81</td>
+      <td>77</td>
+      <td>28</td>
+      <td>86</td>
+      <td>33</td>
+      <td>74</td>
+      <td>12</td>
     </tr>
     <tr>
       <th>7</th>
-      <td>48</td>
-      <td>12</td>
-      <td>53</td>
-      <td>6</td>
-      <td>39</td>
-      <td>41</td>
-      <td>68</td>
-      <td>44</td>
-      <td>45</td>
-      <td>5</td>
+      <td>37</td>
+      <td>26</td>
+      <td>2</td>
+      <td>70</td>
+      <td>61</td>
+      <td>4</td>
+      <td>20</td>
+      <td>4</td>
+      <td>40</td>
+      <td>24</td>
     </tr>
     <tr>
       <th>8</th>
-      <td>69</td>
-      <td>23</td>
-      <td>58</td>
-      <td>83</td>
       <td>45</td>
-      <td>17</td>
-      <td>47</td>
-      <td>66</td>
-      <td>30</td>
+      <td>77</td>
+      <td>64</td>
       <td>18</td>
+      <td>95</td>
+      <td>94</td>
+      <td>49</td>
+      <td>79</td>
+      <td>72</td>
+      <td>11</td>
     </tr>
     <tr>
       <th>9</th>
-      <td>86</td>
+      <td>73</td>
+      <td>90</td>
+      <td>13</td>
+      <td>25</td>
+      <td>93</td>
+      <td>30</td>
+      <td>34</td>
       <td>39</td>
-      <td>96</td>
-      <td>70</td>
-      <td>63</td>
-      <td>95</td>
-      <td>46</td>
-      <td>75</td>
-      <td>44</td>
-      <td>99</td>
+      <td>85</td>
+      <td>11</td>
     </tr>
   </tbody>
 </table>
@@ -768,7 +769,7 @@ Requirement already satisfied: six&gt;=1.5 in c:\users\alejo\appdata\local\progr
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;Axes: &gt;
 </pre></div>
 </div>
-<img alt="_images/2044551d82ee7fcde31075b32a2cf33190084cbc42325ac5e7765055fd6bd5b5.png" src="_images/2044551d82ee7fcde31075b32a2cf33190084cbc42325ac5e7765055fd6bd5b5.png" />
+<img alt="_images/be9fa622bd9088d447b5f6e1be45f39c2520a60f970ab3a4f707f99f2eccf643.png" src="_images/be9fa622bd9088d447b5f6e1be45f39c2520a60f970ab3a4f707f99f2eccf643.png" />
 </div>
 </div>
 </section>
